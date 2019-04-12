@@ -21,6 +21,7 @@ $(document).ready(function() {
 			aww.data.children.forEach((item) => {
 				html += `<li><img src="${item.data.thumbnail}" /><a href="${item.data.url}">${item.data.title}</a></li>`
 			})
+			html += "</ul>"
 			$('#reddits').html(html)
 		})
 	})
